@@ -1,0 +1,14 @@
+diff --git a/sites/all/modules/contrib/google_analytics_reports/google_analytics_reports_api/google_analytics_reports_api.pages.inc b/sites/all/modules/contrib/google_analytics_reports/google_analytics_reports_api/google_analytics_reports_api.pages.inc
+index 3b3204a..bd96613 100644
+--- a/sites/all/modules/contrib/google_analytics_reports/google_analytics_reports_api/google_analytics_reports_api.pages.inc
++++ b/sites/all/modules/contrib/google_analytics_reports/google_analytics_reports_api/google_analytics_reports_api.pages.inc
+@@ -180,8 +180,8 @@ function google_analytics_reports_api_admin_submit($form, &$form_state) {
+       break;
+ 
+     case t('Save settings'):
+-      variable_set('google_analytics_reports_profile_id', $form_state['values']['google_analytics_reports_profile_id']);
+-      variable_set('google_analytics_reports_cache_length', $form_state['values']['google_analytics_reports_cache_length']);
++      variable_set('google_analytics_reports_api_profile_id', $form_state['values']['google_analytics_reports_api_profile_id']);
++      variable_set('google_analytics_reports_api_cache_length', $form_state['values']['google_analytics_reports_api_cache_length']);
+       drupal_set_message(t('Settings have been saved successfully.'));
+       break;
